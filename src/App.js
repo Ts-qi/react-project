@@ -1,18 +1,13 @@
 import React, { Component } from 'react';
 import store from './store'
+import Header from './common/header/index'
 
 class App extends Component {
-  componentDidMount() {
-
-  }
-  constructor(props) {
-    super(props);
-    console.log(store.getState())
-  }
+  
   render() {
     return (
       <div>
-       hello react project
+        <Header/>
       </div>
     );
   }

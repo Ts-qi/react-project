@@ -1,4 +1,4 @@
-import injectGlobal from 'styled-components'
+import  {injectGlobal } from 'styled-components'
 
 
 //  不同浏览器 很多的 便签的表现形式不一致； rest.css 就是使 所有的标签在不同的浏览器的表现一致；
@@ -46,5 +46,4 @@ injectGlobal `
         border-collapse: collapse;
         border-spacing: 0;
     }
-
 `;
