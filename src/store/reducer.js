@@ -1,9 +1,20 @@
 const defaultState = {
-    inputName:'',
-    name:'tanq'
+    focused: false,
 }
 // reducer 可以接受 state ； 但是不能去改变 state ；只能进行一个深拷贝进行操作； 早 return newState
 export default (state = defaultState,action)=> {
+    if (action.type === 'search_focus') {
+        return {
+            focused: true,
+        }
+    }
+    if (action.type === 'search_blur') {
+        return {
+            focused: false
+        }
+    }
+
+
     return state; 
     // state  就是 vuex  里面的 state ;状态初始化
 }
